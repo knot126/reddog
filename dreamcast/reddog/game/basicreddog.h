@@ -308,7 +308,7 @@ typedef VOID 			KMVOID;					/* 		*/
 typedef KMVOID 			*PKMVOID;				/* p	*/
 //END OF BITS FROM KM BASE
 
-#include "kmenum.h"
+//#include "kmenum.h"
 
 //#include "kmstruct.h"
 /** BITS FROM KMSTRUCT
@@ -382,7 +382,7 @@ typedef struct tagKMSURFACEDESC
  * You must have your own local copy of this file - it is *not*
  * under source control
  */
-#include "LocalDefs.h"
+//#include "LocalDefs.h"
 
 /* Defaults: */
 #ifndef ANTIALIAS

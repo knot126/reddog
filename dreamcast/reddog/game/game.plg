@@ -1,0 +1,23 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Game - Win32 Warning--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+Game.mak(14) : fatal error U1052: file 'STRAT.LST' not found
+Stop.
+Error executing NMAKE.
+
+
+
+<h3>Results</h3>
+RedDog.elf - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

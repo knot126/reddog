@@ -129,7 +129,7 @@ int _tmain(int argc, TCHAR* argv[], TCHAR* envp[])
 				out.WriteString (newDialog);
 				newDialog.Format ("extern char FEDialog_%d[];\n", dialog);
 				out2.WriteString (newDialog);
-				Shift(command)
+				Shift(command);
 			} else {
 				CString word = Shift(command);
 				if (!word.CompareNoCase ("STYLE") ||

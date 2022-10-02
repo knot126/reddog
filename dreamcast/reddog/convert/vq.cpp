@@ -2,7 +2,7 @@
 #include "Convert.h"
 #include "Progress.h"
 #include "Vq.h"
-#include <kamui.h>
+//#include <kamui.h>
 #include <math.h>
 
 CVqCompressor::Uint32 CVqCompressor::xyTab[1024];
@@ -25,6 +25,10 @@ void CVqCompressor::MakeTable()
 // Constructor
 CVqCompressor::CVqCompressor (CString fileName, CProgress &progress) : pBar(progress)
 {
+	mgMessageBox ("CVqCompressor::CVqCompressor not implemented in this build of convert!", "Message from Converter", MB_OK | MB_ICONINFORMATION);
+	return;
+
+#if 0
 	FILE	*f;
 	Uint16	*memory, *memPtr;
 	char	*memEnd;
@@ -224,6 +228,7 @@ CVqCompressor::CVqCompressor (CString fileName, CProgress &progress) : pBar(prog
 
 	delete [] memory;
 	bOK = TRUE;
+#endif
 }
 
 void CVqCompressor::ConvWord (Word *wPtr, Uint16 *mPtr, Uint16 size)

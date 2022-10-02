@@ -1,7 +1,7 @@
 #include "StdAfx.h"
 #include "Convert.h"
 #include "TGAload.h"
-#include "Kamui.h"
+//#include "Kamui.h"
 #include <float.h>
 #include <math.h>
 #define PI 3.141592653548f
@@ -329,6 +329,8 @@ Targa::AlphaType Targa::getAlphaType()
 // PVR stuff
 PVR::PVR (Targa &targa, int mipmap, Targa::AlphaType alphaType, Targa *baseTarga /* = NULL */)
 {
+	return;
+	/*
 	ok = false;
 	size = 0;
 	pixels = NULL;
@@ -422,7 +424,7 @@ PVR::PVR (Targa &targa, int mipmap, Targa::AlphaType alphaType, Targa *baseTarga
 		break;		
 	}
 
-	ok = true;
+	ok = true;*/
 }
 
 unsigned long PVR::Crc32Table[256];
@@ -470,6 +472,7 @@ void PVR::MakeTable()
 
 bool PVR::Output (CFile &file)
 {
+	/*
 	unsigned int dataSize, xAndY;
 	
 	if (!isOK())
@@ -517,6 +520,8 @@ bool PVR::Output (CFile &file)
 	}
 	
 	return true;
+	*/
+	return false;
 }
 
 void PVR::OutputData (CFile &file)
@@ -688,6 +693,7 @@ Pixel SuperSampler::Sample (Targa &t, int x, int y)
  */
 void PVR::MakeBumpMap (void)
 {
+/*
 	if (!isOK())
 		return;
 
@@ -701,7 +707,7 @@ void PVR::MakeBumpMap (void)
 	for (i = 0; i < (size*size); ++i) {
 		/*
 		 * Must be in 5/6/5 format for this to work
-		 */
+		 *
 		PvrPixel pix = *p++;
 		*l = (((float)(pix & 31) / 32.f) + ((float)((pix>>5) & 63) / 64.f) + ((float)((pix>>11) & 31) / 32.f)) * (1.f/3.f);
 		l++;
@@ -716,7 +722,7 @@ void PVR::MakeBumpMap (void)
 			float height, perturbY, perturbX, perturbZ, rScale;
 			float S, R;
 			unsigned char s, r;
-			/* Appallingly suboptimal */
+			/* Appallingly suboptimal *
 			height		= luminance[GETXY(x,y)];
 			top			= height - luminance[GETXY(x,y-1)];
 			bottom		= luminance[GETXY(x,y+1)] - height;
@@ -724,8 +730,8 @@ void PVR::MakeBumpMap (void)
 			right		= luminance[GETXY(x+1, y)] - height;
 
 			// *0.5 taken out to accentuate the bumps
-			perturbY = (top  + bottom)/* * 0.5f */;
-			perturbX = (left + right)/* * 0.5f */;
+			perturbY = (top  + bottom)/* * 0.5f /;
+			perturbX = (left + right)/* * 0.5f /;
 			perturbZ = 1.f;
 			rScale = (float)(1.f / (sqrt (perturbX*perturbX + perturbY*perturbY + 1.f*1.f)));
 			perturbX *= rScale;
@@ -746,4 +752,5 @@ void PVR::MakeBumpMap (void)
 
 	if (nextMipmap)
 		nextMipmap->MakeBumpMap();
+*/
 }

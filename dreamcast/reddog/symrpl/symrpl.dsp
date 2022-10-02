@@ -8,12 +8,12 @@ CFG=SymRpl - Win32 Release
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "SymRpl.mak".
+!MESSAGE NMAKE /f "symrpl.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "SymRpl.mak" CFG="SymRpl - Win32 Release"
+!MESSAGE NMAKE /f "symrpl.mak" CFG="SymRpl - Win32 Release"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
@@ -39,9 +39,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MDd /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_RELEASE" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
-# SUBTRACT BASE CPP /Z<none>
 # ADD CPP /nologo /MD /W3 /GX /Od /D "WIN32" /D "NDEBUG" /D "_RELEASE" /D "_CONSOLE" /D "_MBCS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
-# SUBTRACT CPP /Z<none>
 # ADD BASE RSC /l 0x809 /d "_DEBUG" /d "_AFXDLL"
 # ADD RSC /l 0x809 /d "_DEBUG" /d "_AFXDLL"
 BSC32=bscmake.exe
@@ -49,9 +47,9 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:console /incremental:no /machine:I386 /out:"p:\utils\SymRpl.exe"
-# SUBTRACT BASE LINK32 /debug /pdbtype:<none>
-# ADD LINK32 /nologo /subsystem:console /incremental:no /machine:I386 /out:"p:\utils\SymRpl.exe"
-# SUBTRACT LINK32 /debug /pdbtype:<none>
+# SUBTRACT BASE LINK32 /debug
+# ADD LINK32 /nologo /subsystem:console /incremental:no /machine:I386
+# SUBTRACT LINK32 /debug
 # Begin Target
 
 # Name "SymRpl - Win32 Release"

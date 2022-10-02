@@ -9,7 +9,7 @@ typedef void KMSURFACEDESC;
 typedef void Stream;
 typedef void Allocator, Deallocator;
 typedef Uint32 Angle;
-#include "..\Game\LocalDefs.h"
+//#include "..\Game\LocalDefs.h"
 #include "RDTypes.h"
 #include "material.h"
 #include "model.h"

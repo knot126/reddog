@@ -27,7 +27,7 @@
  */
 typedef struct tagStream
 {
-	GDFS		gdfs;					/* Handle to OS file */
+	void		*gdfs;					/* Handle to OS file */
 	Bool		fin;					/* Activity complete flag */
 	Bool		active;					/* Is this descriptor active? */
 	Sint32		bytesLeft;				/* Bytes left for this file */

@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Stream - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSP2D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/stream.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\reddog\dreamcast\reddog\stream\Defs.c"
+"C:\reddog\dreamcast\reddog\stream\Lex.c"
+"C:\reddog\dreamcast\reddog\stream\Stream.c"
+]
+Creating command line "cl.exe @C:\TEMP\RSP2D.tmp" 
+Creating temporary file "C:\TEMP\RSP2E.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Strat.pdb" /debug /machine:I386 /out:"Strat.exe" /pdbtype:sept 
+.\Debug\Defs.obj
+.\Debug\Lex.obj
+.\Debug\Stream.obj
+]
+Creating command line "link.exe @C:\TEMP\RSP2E.tmp"
+<h3>Output Window</h3>
+Compiling...
+Defs.c
+Lex.c
+c:\reddog\dreamcast\reddog\stream\lex.c(3612) : warning C4101: 'buf' : unreferenced local variable
+c:\reddog\dreamcast\reddog\stream\lex.c(3607) : warning C4101: 'usedSFX' : unreferenced local variable
+c:\reddog\dreamcast\reddog\stream\lex.c(3603) : warning C4101: 'SFXFileName' : unreferenced local variable
+c:\reddog\dreamcast\reddog\stream\lex.c(3607) : warning C4101: 'ID' : unreferenced local variable
+c:\reddog\dreamcast\reddog\stream\lex.c(3610) : warning C4101: 'KATSIZE' : unreferenced local variable
+c:\reddog\dreamcast\reddog\stream\lex.c(3601) : warning C4101: 'SFXFile' : unreferenced local variable
+Stream.c
+Linking...
+
+
+
+<h3>Results</h3>
+Strat.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

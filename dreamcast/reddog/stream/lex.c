@@ -893,7 +893,8 @@ int CheckMapDB(char *filename)
 	return(quit);
 }
 
-
+// Because they aren't defined anywhere and becuase they don't make any sense outside of the network share...
+#define STRATMAPDIR ".\\PDRIVE\\DREAMCAST\\"
 
 FILE *OpenFile(char *filename,int Mode)
 {
@@ -1727,9 +1728,11 @@ void ReadGenericSounds()
 
 	sprintf(name,ctime(&katbuf.st_mtime));
 	sprintf(GenericFile,ctime(&txtbuf.st_mtime));
-	if (DateGreat(name,GenericFile))
+//	if (DateGreat(name,GenericFile))
 	//run the compressor on the generic bank
-	_spawnl (_P_WAIT, "p:\\sound\\MKBANK","P:\\SOUND\\MKBANK", GenericOSSFileName, NULL);
+
+//	Something to do with sound?
+//	_spawnl (_P_WAIT, "p:\\sound\\MKBANK","P:\\SOUND\\MKBANK", GenericOSSFileName, NULL);
 }
 
 
@@ -4647,7 +4650,7 @@ void ProcessSounds(char *level)
 
 	}
 	//run the compressor on the level bank
-	_spawnl (_P_WAIT, "p:\\sound\\MKBANK","P:\\SOUND\\MKBANK", OssFileName, NULL);
+//	_spawnl (_P_WAIT, "p:\\sound\\MKBANK","P:\\SOUND\\MKBANK", OssFileName, NULL);
 
    //now make a .SFX file for internal directory
 }

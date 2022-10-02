@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Wadder - Win32 Artist--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\TEMP\RSPBF.tmp" with contents
+[
+/nologo /MD /W3 /GX /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D ARTIST=1 /FR"WadderArt/" /Fp"WadderArt/wadder.pch" /Yu"stdafx.h" /Fo"WadderArt/" /Fd"WadderArt/" /FD /c 
+"C:\reddog\dreamcast\reddog\wadder\WadderDlg.cpp"
+"C:\reddog\dreamcast\reddog\wadder\WadFile.cpp"
+]
+Creating command line "cl.exe @C:\TEMP\RSPBF.tmp" 
+Creating temporary file "C:\TEMP\RSPC0.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"WadderArt/wadder.pdb" /machine:I386 /out:"WadderArt/wadder.exe" /pdbtype:sept 
+.\WadderArt\StdAfx.obj
+.\WadderArt\TexLib.obj
+.\WadderArt\TexRec.obj
+.\WadderArt\Wadder.obj
+.\WadderArt\WadderDlg.obj
+.\WadderArt\WadFile.obj
+.\WadderArt\Wadder.res
+]
+Creating command line "link.exe @C:\TEMP\RSPC0.tmp"
+<h3>Output Window</h3>
+Compiling...
+WadderDlg.cpp
+WadFile.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+wadder.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

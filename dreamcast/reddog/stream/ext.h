@@ -1,9 +1,27 @@
 
-#include "..\game\localdefs.h"
-#include <machine.h>
-#include <shinobi.h>
-#include <kamui.h>
-#include <kamuix.h>
+//#include "..\game\localdefs.h"
+//#include <machine.h>
+//#include <shinobi.h>
+//#include <kamui.h>
+//#include <kamuix.h>
+
+// oh dear god ...
+
+// size_t
+#include <stddef.h>
+
+// Integers ...
+typedef unsigned int Uint32;
+typedef signed   int Sint32;
+typedef unsigned short Uint16;
+typedef signed   short Sint16;
+typedef unsigned char Uint8;
+typedef signed   char Sint8;
+typedef Uint8 Bool;
+
+// Other stuff
+typedef void *KMSURFACEDESC;
+typedef void *GDFS;
 
 //FROM MEMORY.H
 typedef void *Allocator (void *, size_t);

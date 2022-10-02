@@ -8,12 +8,12 @@ CFG=Wadder - Win32 Artist
 !MESSAGE This is not a valid makefile. To build this project using NMAKE,
 !MESSAGE use the Export Makefile command and run
 !MESSAGE 
-!MESSAGE NMAKE /f "Wadder.mak".
+!MESSAGE NMAKE /f "wadder.mak".
 !MESSAGE 
 !MESSAGE You can specify a configuration when running NMAKE
 !MESSAGE by defining the macro CFG on the command line. For example:
 !MESSAGE 
-!MESSAGE NMAKE /f "Wadder.mak" CFG="Wadder - Win32 Artist"
+!MESSAGE NMAKE /f "wadder.mak" CFG="Wadder - Win32 Artist"
 !MESSAGE 
 !MESSAGE Possible choices for configuration are:
 !MESSAGE 
@@ -104,7 +104,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 /nologo /subsystem:windows /machine:I386 /out:"P:\UTILS\Wadder.exe" /pdbtype:sept
+# ADD LINK32 /nologo /subsystem:windows /machine:I386 /pdbtype:sept
 # SUBTRACT LINK32 /debug
 
 !ENDIF 

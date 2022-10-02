@@ -5,7 +5,8 @@
 
 #ifndef _ANIMATE_H
 #define _ANIMATE_H
-#include "Render\Quat.h"  
+// HACK: Needed to get it to find quat.h ...
+#include "..\game\Render\Quat.h"  
 
 
 /*
